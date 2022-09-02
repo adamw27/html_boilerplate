@@ -3,35 +3,41 @@
     <head> <!--for meta info and stuff required to render correctly-->
         <meta charset="UTF-8"> <!--so we display correct characters and symbols-->
         <title>My first webpage</title> <!--tab name-->
+        <link rel="stylesheet" href="styles.css"><!--rel specifies the relation ship-->
     </head>
     <body> <!--where all the content goes-->
-        <h1>Hello world!</h1>
-        <h2>Hello world!</h2>
-        <h3>Hello world!</h3>
-        <h4>Hello world!</h4>
-        <h5>Hello world!</h5>
-        <h6>Hello world!</h6>
-        <p>SUP</p>
-        <p>SUP <strong>SUP</strong> <em>SUP</em></p>
-        <strong>SUP SUP SUP</strong> <!--bold paragraph-->
-        <ul> <!--unordered list, each item begins with a bullet point-->
-            <li>Item 1</li> <!--elements within a list are list items-->
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-        <ol> <!--ordered list, each item begins with an order number-->
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ol>
-        <a href="https://www.theodinproject.com/about">TOP About (Absolute link)</a> 
-        <!--an anchor element, defined by wrapping a text or another html element we want to be a link-->
-        <!--it requires an html attribute that gives it additional info-->
-        <!--href is a hyperlink reference (a destination we want our link to go)-->
-        <!--we can link our buttons to any videos, pdf but for most part we will be linking our other html files-->
-        <!--absolute links are links to pages on other websites on the internet-->
-        <!--relative links are links to other pages within out website, they only contain file path-->
-        <a href="pages/images.html"><p>Images (Relative link)</p></a>
-        
+        <div class="headings">
+            <h1 class="odd_heading">Hello world!</h1>
+            <h2 class="even_heading">Hello world!</h2>
+            <h3 class="odd_heading">Hello world!</h3>
+            <h4 class="even_heading">Hello world!</h4>
+            <h5 class="odd_heading">Hello world!</h5>
+            <h6 class="even_heading">Hello world!</h6>
+        </div>
+        <div class="main_content">
+            <p class="sup">SUP</p>
+            <p class="sup">SUP <strong>SUP</strong> <em>SUP</em></p>
+            <strong class="sup">SUP SUP SUP</strong> <!--bold paragraph-->
+            <ul class="unordered_list"> <!--unordered list, each item begins with a bullet point-->
+                <li>Item 1</li> <!--elements within a list are list items-->
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <ol class="ordered_list"> <!--ordered list, each item begins with an order number-->
+                <li id="item1">Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </div>
+        <div class="links">
+            <a class="link_buttons" href="https://www.theodinproject.com/about"><p>TOP About (Absolute link)</p></a> 
+            <!--an anchor element, defined by wrapping a text or another html element we want to be a link-->
+            <!--it requires an html attribute that gives it additional info-->
+            <!--href is a hyperlink reference (a destination we want our link to go)-->
+            <!--we can link our buttons to any videos, pdf but for most part we will be linking our other html files-->
+            <!--absolute links are links to pages on other websites on the internet-->
+            <!--relative links are links to other pages within out website, they only contain file path-->
+            <a class="link_buttons" href="pages/images.html"><p>Images (Relative link)</p></a>
+        </div>
     </body>
 </html>

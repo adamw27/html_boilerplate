@@ -1,0 +1,49 @@
+/*all is approached *star*/
+/*padding increases the space between the edge of the box and the content*/
+/*margin increases the space between a box and any other box that sits next to it*/
+/*border adds space between the magin and the padding*/
+/*inline continues in a line and a block starts under the last block*/
+
+* {
+    border: 1px solid red;
+}
+
+/*type just type*/
+div {
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+/*classes are approached .name*/
+.odd_heading {
+    color: blue;
+    text-align: center;
+}
+
+.even_heading {
+    color: red;
+    text-align: center;
+}
+
+.sup {
+    background-color: yellow; 
+}
+
+.unordered_list {
+    background-color: purple;
+    text-align: right;
+}
+
+.ordered_list {
+    background-color: green;
+    text-align: center;
+}
+
+.link_buttons {
+    text-align: center;
+}
+
+/*ids are approached #name*/
+#item1 {
+    color: white;
+}
